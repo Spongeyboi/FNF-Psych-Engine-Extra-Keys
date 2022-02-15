@@ -92,8 +92,6 @@ class TitleState extends MusicBeatState
 			}
 		}
 		
-		#end
-		
 		
 		var path = "mods/" + Paths.currentModDirectory + "/images/gfDanceTitle.json";
 		trace(path, FileSystem.exists(path));
@@ -108,6 +106,7 @@ class TitleState extends MusicBeatState
 		
 		titleJSON = Json.parse(File.getContent(path)); //finna do it l8r
 		
+		#end
 		
 		#if (polymod && !html5)
 		if (sys.FileSystem.exists('mods/')) {
